@@ -6,7 +6,7 @@ const Settings = () => {
 		<>
 			<div className="settings-container">
 				<span>
-					<i class="fas fa-cog icon"></i>
+					<i className="fas fa-cog icon"></i>
 				</span>
 			</div>
 		</>
