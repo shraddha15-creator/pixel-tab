@@ -1,0 +1,18 @@
+.quote-and-author {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  text-align: center;
+  width: 60vw;
+
+}
+
+.quote,
+.quote-author {
+  font-size: .6rem;
+}
+
+.quote-author {
+  text-align: end;
+  padding-right: 2rem;
+}

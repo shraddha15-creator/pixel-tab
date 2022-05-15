@@ -1,0 +1,59 @@
+.landingImg-container {
+  background-image: url(../assets/bg-2.gif);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+
+.overlay-container {
+  position: relative;
+}
+
+.overlay {
+  position: absolute;
+  height: 100vh;
+  z-index: 1;
+}
+
+.main-container {
+  width: 100vw;
+  display: flex;
+  gap: 2rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 10rem;
+  color: var(--white);
+}
+
+.whats-name {
+  font-size: 2rem;
+}
+
+.btn-continue,
+.btn-add {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  border: 1px solid var(--white);
+  padding: .5rem 1rem;
+  border-radius: 5px;
+  color: var(--white);
+  text-decoration: none;
+  text-align: center;
+  transition: 0.5s;
+  background-size: 200% auto;
+  text-shadow: 2px 2px 5px rgb(0, 0, 0);
+  background-image: linear-gradient(to right, #7777774c 0%, #ffffff90 51%, #0c0c0c7e 100%);
+
+}
+
+.btn:hover {
+  background-position: right center;
+}
+
+
+.next-arrow {
+  width: 3vw;
+  color: var(--white);
+}

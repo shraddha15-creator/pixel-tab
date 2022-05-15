@@ -1,0 +1,24 @@
+.whats-focus {
+  font-size: 1rem;
+}
+
+input[type="checkbox"] {
+  width: 25px;
+  height: 25px;
+}
+
+.user-name-input {
+  font-family: 'Press Start 2P',
+    cursive;
+  color: var(--white);
+  border: none;
+  background-color: transparent;
+  border-bottom: 2px solid var(--white);
+  width: 30%;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.name-input:focus {
+  outline: none;
+}

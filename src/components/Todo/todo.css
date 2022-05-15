@@ -1,0 +1,17 @@
+.todo-container {
+  position: absolute;
+  right: 1rem;
+  bottom: 1rem;
+}
+
+.add-todo:hover {
+  background-position: right center;
+}
+
+.add-todo {
+  cursor: pointer;
+  font-size: .7rem;
+  border: 1px solid rgb(100, 100, 100);
+  padding: .7rem;
+  border-radius: 5px;
+}

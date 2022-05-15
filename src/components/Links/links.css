@@ -1,0 +1,22 @@
+.links-container {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 1rem;
+  left: 1rem;
+  top: 1rem;
+}
+
+.links-items {
+  display: flex;
+  flex-direction: column;
+  gap: .5rem;
+  border: 1px solid rgb(100, 100, 100);
+  padding: .7rem;
+  border-radius: 5px;
+}
+
+.link-item-name {
+  font-size: .5rem;
+}
