@@ -10,6 +10,11 @@ export const DataProvider = ({ children }) => {
 		setUserName(e.target.value);
 	};
 
+	const continueHandler = () => {
+		localStorage.setItem("userName", userName);
+		window.location.reload(false);
+	};
+
 	useEffect(() => {
 		const user = localStorage.getItem("userName");
 		setIsOldUser(user);
@@ -23,6 +28,7 @@ export const DataProvider = ({ children }) => {
 				setIsOldUser,
 				setUserName,
 				nameChangeHandler,
+				continueHandler,
 			}}
 		>
 			{children}

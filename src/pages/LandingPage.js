@@ -4,7 +4,7 @@ import { useData } from "../context/data-context";
 import "./landing.css";
 
 const LandingPage = () => {
-	const { userName, nameChangeHandler } = useData();
+	const { userName, nameChangeHandler, continueHandler } = useData();
 
 	return (
 		<>
@@ -18,13 +18,7 @@ const LandingPage = () => {
 						onChange={(e) => nameChangeHandler(e)}
 					/>
 					{userName && (
-						<div
-							className="btn btn-continue"
-							onClick={() => {
-								localStorage.setItem("userName", userName);
-								window.location.reload(false);
-							}}
-						>
+						<div className="btn btn-continue" onClick={continueHandler}>
 							Continue
 							<img src={NextArrow} alt="newt" className="next-arrow" />
 						</div>
