@@ -7,6 +7,7 @@ import Settings from "../components/Settings/Settings";
 import Time from "../components/Time/Time";
 import Todo from "../components/Todo/Todo";
 import Weather from "../components/Weather/Weather";
+//will use barrel export here in next PR
 
 const PixelTabPage = () => {
 	return (
