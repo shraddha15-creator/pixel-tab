@@ -1,19 +1,28 @@
 import React from "react";
-import { Link } from "react-router-dom";
-import "./landing.css";
 import NextArrow from "../assets/next-arrow.gif";
+import { useData } from "../context/data-context";
+import "./landing.css";
 
 const LandingPage = () => {
+	const { userName, nameChangeHandler, continueHandler } = useData();
+
 	return (
 		<>
 			<div className="landingImg-container overlay-container">
 				<div className="overlay main-container">
 					<p className="whats-name">Hello, What's your name?</p>
-					<input type="text" className="user-name-input name-input" />
-					<Link to={"/pixel-tab"} className="btn btn-continue">
-						Continue
-						<img src={NextArrow} alt="newt" className="next-arrow" />
-					</Link>
+					<input
+						type="text"
+						className="user-name-input name-input"
+						value={userName}
+						onChange={(e) => nameChangeHandler(e)}
+					/>
+					{userName && (
+						<div className="btn btn-continue" onClick={continueHandler}>
+							Continue
+							<img src={NextArrow} alt="newt" className="next-arrow" />
+						</div>
+					)}
 				</div>
 			</div>
 		</>

@@ -1,16 +1,13 @@
-import { Route, Routes } from "react-router-dom";
 import "./App.css";
+import { useData } from "./context/data-context";
 import LandingPage from "./pages/LandingPage";
 import PixelTabPage from "./pages/PixelTabPage";
+//will use barrel export here in next PR
 
 function App() {
+	const { isOldUser } = useData();
 	return (
-		<div className="App">
-			<Routes>
-				<Route path="/" element={<LandingPage />} />
-				<Route path="pixel-tab" element={<PixelTabPage />} />
-			</Routes>
-		</div>
+		<div className="App">{isOldUser ? <PixelTabPage /> : <LandingPage />}</div>
 	);
 }
 
