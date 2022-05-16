@@ -1,7 +1,7 @@
 import React from "react";
 import "./focus.css";
 
-const Focus = () => {
+export const Focus = () => {
 	return (
 		<>
 			<p className="whats-focus">What is your main focus for today?</p>
@@ -12,5 +12,3 @@ const Focus = () => {
 		</>
 	);
 };
-
-export default Focus;

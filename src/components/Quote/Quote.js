@@ -1,6 +1,6 @@
 import React from "react";
 import "./quote.css";
-const Quote = () => {
+export const Quote = () => {
 	return (
 		<>
 			<div className="quote-and-author">
@@ -12,5 +12,3 @@ const Quote = () => {
 		</>
 	);
 };
-
-export default Quote;

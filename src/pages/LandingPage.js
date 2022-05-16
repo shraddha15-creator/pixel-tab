@@ -3,7 +3,7 @@ import NextArrow from "../assets/next-arrow.gif";
 import { useData } from "../context/data-context";
 import "./landing.css";
 
-const LandingPage = () => {
+export const LandingPage = () => {
 	const { userName, nameChangeHandler, continueHandler } = useData();
 
 	return (
@@ -28,5 +28,3 @@ const LandingPage = () => {
 		</>
 	);
 };
-
-export default LandingPage;

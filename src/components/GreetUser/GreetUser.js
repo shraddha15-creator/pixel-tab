@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import { useData } from "../../context/data-context";
 import "./greet.css";
 
-const GreetUser = () => {
+export const GreetUser = () => {
 	const { isOldUser, setIsOldUser } = useData();
 
 	useEffect(() => {
@@ -16,5 +16,3 @@ const GreetUser = () => {
 		</>
 	);
 };
-
-export default GreetUser;

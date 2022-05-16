@@ -1,7 +1,7 @@
 import React from "react";
 import "./todo.css";
 
-const Todo = () => {
+export const Todo = () => {
 	return (
 		<>
 			<div className="todo-container">
@@ -10,5 +10,3 @@ const Todo = () => {
 		</>
 	);
 };
-
-export default Todo;

@@ -1,7 +1,7 @@
 import React from "react";
 import "./links.css";
 
-const Links = () => {
+export const Links = () => {
 	return (
 		<>
 			<div className="links-container">
@@ -21,5 +21,3 @@ const Links = () => {
 		</>
 	);
 };
-
-export default Links;
