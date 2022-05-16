@@ -8,7 +8,7 @@ const GreetUser = () => {
 	useEffect(() => {
 		const user = localStorage.getItem("userName");
 		setIsOldUser(user);
-	}, [isOldUser]);
+	}, [setIsOldUser]);
 
 	return (
 		<>
