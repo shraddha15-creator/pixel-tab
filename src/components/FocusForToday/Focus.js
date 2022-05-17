@@ -4,7 +4,6 @@ import "./focus.css";
 
 export const Focus = () => {
 	const { todaysFocus, setTodaysFocus } = useData();
-	console.log("fucus page", todaysFocus);
 	const [focusInput, setFocusInput] = useState("");
 	const [isFocusCompleted, setFocusCompleted] = useState(false);
 
