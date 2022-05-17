@@ -1,11 +1,11 @@
 import React from "react";
 import {
 	Focus,
-	Links,
+	// Links,
 	Quote,
 	Settings,
 	Time,
-	Todo,
+	// Todo,
 	Weather,
 } from "../components";
 
