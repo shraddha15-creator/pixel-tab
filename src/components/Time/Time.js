@@ -13,9 +13,11 @@ export const Time = () => {
 		}, 1000);
 	}, []);
 	const currentHour = currTime.slice(0, 2);
+	const today = new Date().toLocaleDateString();
 
 	return (
 		<>
+			<h1 className="date">{today}</h1>
 			<h1 className="time">{currTime.slice(0, 5)}</h1>
 			<GreetUser currentHour={currentHour} />
 		</>
