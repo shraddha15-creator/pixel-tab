@@ -2,6 +2,11 @@
   font-size: 1rem;
 }
 
+.TODAY {
+  text-align: center;
+  padding-bottom: 1rem;
+}
+
 input[type="checkbox"] {
   width: 25px;
   height: 25px;

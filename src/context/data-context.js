@@ -5,6 +5,7 @@ const DataContext = createContext();
 export const DataProvider = ({ children }) => {
 	const [userName, setUserName] = useState("");
 	const [isOldUser, setIsOldUser] = useState(false);
+	const [todaysFocus, setTodaysFocus] = useState("");
 
 	const nameChangeHandler = (e) => {
 		setUserName(e.target.value);
@@ -17,7 +18,9 @@ export const DataProvider = ({ children }) => {
 
 	useEffect(() => {
 		const user = localStorage.getItem("userName");
+		const myFocus = localStorage.getItem("focus");
 		setIsOldUser(user);
+		setTodaysFocus(myFocus);
 	}, [isOldUser]);
 
 	return (
@@ -25,6 +28,8 @@ export const DataProvider = ({ children }) => {
 			value={{
 				userName,
 				isOldUser,
+				todaysFocus,
+				setTodaysFocus,
 				setIsOldUser,
 				setUserName,
 				nameChangeHandler,
