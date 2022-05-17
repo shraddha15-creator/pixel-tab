@@ -32,7 +32,7 @@ export const Weather = () => {
 
 	useEffect(() => {
 		getWeatherData();
-	}, [latitude, setLatitude, getWeatherData]);
+	}, [latitude, setLatitude]);
 
 	return (
 		<>
