@@ -20,7 +20,7 @@ export const PixelTabPage = () => {
 					<Focus />
 					<Quote />
 					<Settings />
-					<Todo />
+					{/* <Todo /> */}
 				</div>
 			</div>
 		</>
