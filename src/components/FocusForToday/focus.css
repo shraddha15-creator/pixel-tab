@@ -22,3 +22,29 @@ input[type="checkbox"] {
 .name-input:focus {
   outline: none;
 }
+
+.focus-form {
+  display: flex;
+  gap: 3rem;
+}
+
+.visible {
+  visibility: visible;
+}
+
+.hidden {
+  display: none;
+}
+
+.focus {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background-color: rgba(0, 0, 0, 0.489);
+  padding: .8rem 2rem;
+  border-radius: 5px;
+}
+
+.focus-completed {
+  text-decoration: line-through;
+}

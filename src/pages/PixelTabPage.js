@@ -14,7 +14,7 @@ export const PixelTabPage = () => {
 		<>
 			<div className="landingImg-container overlay-container">
 				<div className="main-container overlay ">
-					<Links />
+					{/* <Links /> */}
 					<Weather />
 					<Time />
 					<Focus />
