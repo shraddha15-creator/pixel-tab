@@ -1,9 +1,12 @@
 import React, { useEffect } from "react";
 import { useData } from "../../context/data-context";
+import { greetings } from "../../utils/greetings";
 import "./greet.css";
 
-export const GreetUser = () => {
+export const GreetUser = ({ currentHour }) => {
 	const { isOldUser, setIsOldUser } = useData();
+
+	const greetUser = greetings(currentHour);
 
 	useEffect(() => {
 		const user = localStorage.getItem("userName");
@@ -12,7 +15,9 @@ export const GreetUser = () => {
 
 	return (
 		<>
-			<p className="greet">Good Morning, {isOldUser}!</p>
+			<p className="greet">
+				{greetUser}, {isOldUser}!
+			</p>
 		</>
 	);
 };
