@@ -1,7 +1,6 @@
 import React from "react";
 import {
 	Focus,
-	GreetUser,
 	Links,
 	Quote,
 	Settings,
@@ -18,7 +17,6 @@ export const PixelTabPage = () => {
 					<Links />
 					<Weather />
 					<Time />
-					<GreetUser />
 					<Focus />
 					<Quote />
 					<Settings />
