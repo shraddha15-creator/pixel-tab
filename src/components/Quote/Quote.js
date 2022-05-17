@@ -12,7 +12,6 @@ export const Quote = () => {
 			);
 			setQuote(response.data.quotes[0].text);
 			setAuthor(response.data.quotes[0].author);
-			console.log(response.data.quotes);
 		} catch (error) {
 			console.error(error);
 		}
