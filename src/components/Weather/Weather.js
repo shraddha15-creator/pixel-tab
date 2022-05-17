@@ -39,6 +39,7 @@ export const Weather = () => {
 			<div className="weather-container">
 				<img
 					src={`http://openweathermap.org/img/w/${weatherIcon}.png`}
+					alt="weather-icon"
 					className="weather-icon"
 				/>
 				<p className="weather-desc">{weather}</p>
