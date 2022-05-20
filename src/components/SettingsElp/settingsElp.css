@@ -1,0 +1,13 @@
+.setting-ellp {
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  gap: 0.5rem;
+  background-color: rgba(0, 0, 0, 0.489);
+  padding: 1rem;
+  font-size: 0.8rem;
+  margin-bottom: .4rem;
+  border: 1px solid rgba(0, 0, 0, 0.711);
+  border-radius: 5px;
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.489);
+}

@@ -20,6 +20,11 @@ export const Focus = () => {
 		setFocusCompleted((prev) => !prev);
 	};
 
+	const deleteFocusHandler = (e) => {
+		localStorage.removeItem("focus");
+		window.location.reload();
+	};
+
 	return (
 		<>
 			<p className="whats-focus">What is your main focus for today?</p>
@@ -47,6 +52,9 @@ export const Focus = () => {
 					/>
 
 					{todaysFocus}
+					<div onClick={(e) => deleteFocusHandler(e)}>
+						<i className="fas fa-trash-alt"></i>
+					</div>
 				</label>
 			</div>
 		</>
