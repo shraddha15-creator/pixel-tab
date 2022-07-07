@@ -1,3 +1,16 @@
 .greet {
   font-size: 2rem;
+  text-shadow: 1px 1px 2px var(--black);
+}
+
+@media(max-width:750px){
+  .greet {
+  font-size: 1.5rem;
+  }
+}
+
+@media(max-width:450px){
+  .greet {
+  font-size: 1rem;
+  }
 }

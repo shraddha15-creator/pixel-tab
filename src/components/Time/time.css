@@ -1,10 +1,30 @@
 .time {
-  font-size: 5rem;
-  -webkit-text-stroke: 1px black;
-
+  font-size: 9rem;
+  text-shadow: 1px 2px 3px var(--black);
+  font-weight: 600;
 }
 
 .date {
   letter-spacing: .7rem;
-  font-size: .5rem;
+  font-size: 1rem;
+  text-shadow: 1px 1px 2px var(--gray);
+}
+
+@media(max-width:1000px){
+  .time {
+  font-size: 5rem;
+  }
+}
+
+@media(max-width:750px){
+  .time {
+  font-size: 3rem;
+  }
+}
+
+@media(max-width:550px){
+  .date {
+    padding-top: 3rem;
+    font-size: .7rem;
+  }
 }
